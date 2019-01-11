@@ -1,14 +1,14 @@
 //
-//  SwiftDemoOneUITests.swift
-//  SwiftDemoOneUITests
+//  SwTaskOneUITests.swift
+//  SwTaskOneUITests
 //
-//  Created by HSBC Mobile on 10/1/19.
+//  Created by HSBC Mobile on 11/1/19.
 //  Copyright © 2019年 Demo. All rights reserved.
 //
 
 import XCTest
 
-class SwiftDemoOneUITests: XCTestCase {
+class SwTaskOneUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

@@ -9,7 +9,7 @@
 import UIKit
 
 class RootTabBarViewController: UITabBarController, RootTabBarDelegate {
-
+    
     let tabBarNormalImages = ["TabBar0_Normal","TabBar0_Normal","TabBar0_Normal","TabBar0_Normal"]
     let tabBarSelectedImages = ["TabBar0_Selected","TabBar0_Selected","TabBar0_Selected","TabBar0_Selected"]
     let tabBarTitles = ["美食","消息","功能","我的"]
@@ -221,6 +221,7 @@ class RootNavigationController: UINavigationController{
         self.popViewController(animated:true)
     }
 }
+
 
 
 

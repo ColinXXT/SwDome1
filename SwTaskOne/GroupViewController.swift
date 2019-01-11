@@ -32,7 +32,7 @@ class GroupViewController: UIViewController , UITableViewDelegate, UITableViewDa
                 "咖啡",
                 "绿茶"])
         ]
-    
+        
         self.adHeaders = ["精品食物","畅销冷饮"]
         
         //创建表视图
@@ -42,14 +42,14 @@ class GroupViewController: UIViewController , UITableViewDelegate, UITableViewDa
         //创建一个重用的单元格
         self.tableView!.register(UITableViewCell.self, forCellReuseIdentifier: "SwiftCell")
         self.view.addSubview(self.tableView!)
-       
+        
     }
     // section数量
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
-
-
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //为了提供表格显示性能，已创建完成的单元需重复使用
         let identify:String = "SwiftCell"
@@ -75,7 +75,7 @@ class GroupViewController: UIViewController , UITableViewDelegate, UITableViewDa
             return adCell
         }
     }
-
+    
     
     //返回表格行数（也就是返回控件数）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -86,20 +86,20 @@ class GroupViewController: UIViewController , UITableViewDelegate, UITableViewDa
     
     // UITableViewDataSource协议中的方法，该方法的返回值决定指定分区的头部
     func tableView(_ tableView:UITableView, titleForHeaderInSection section:Int)->String?{
-
+        
         var headers = self.adHeaders!
         return headers[section]
     }
     
     
-
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
         // Dispose of any resources that can be recreated.
     }
-
+    
     //Date to String
     func dateFromString(dateStr:String) -> NSDate?{
         let dateFormatter = DateFormatter()
@@ -108,3 +108,4 @@ class GroupViewController: UIViewController , UITableViewDelegate, UITableViewDa
         return (date! as NSDate)
     }
 }
+
